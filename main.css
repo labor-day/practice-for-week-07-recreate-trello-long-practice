@@ -1,8 +1,242 @@
 /* Your code here */
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+.header-nav__container{
+  background-color: #026AA7;
+  font-size: 16px;
+  padding: 4px;
+  color: white;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 730px) {
+  .header-nav__button#search > input {
+    display: none;
+  }
+  .header-nav__button > .boards-label {
+    display: none;
+  }
+}
+
+.team__container {
+  background-color: #f4f5f7;
+  padding: 32px;
+}
+
+.team__info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 650px;
+  text-align: center;
+}
+
+.team__info > h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.team__info > a {
+  color: #172b4d;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.tabbed-nav__container {
+  background-color: #f4f5f7;
+}
+
+.tabbed-nav__group {
+ display: flex;
+ justify-content: center;
+ border-bottom: 1px solid #dfe1e6;
+}
+
+.tabbed-nav__link {
+  background-color: white;
+  border: 1px solid #dfe1e6;
+  border-bottom: 0;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0px 2px;
+  color:#172b4d;
+}
+
+#boards-tab {
+  position: relative;
+  top: 1px;
+}
+#members-tab {
+  background-color: #dfe1e6;
+}
+#settings-tab {
+  background-color: #dfe1e6;
+}
+#business-class-tab {
+  background-color: #dfe1e6;
+}
+@media screen and (max-width: 500px) {
+  .tabbed-nav__group {
+    display:block;
+  }
+  .tabbed-nav__link {
+    display: block;
+  }
+}
+
+.board-1 {
+  background-image: url("board-backgrounds/board-1-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-2 {
+  background-image: url("board-backgrounds/board-2-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-3 {
+  background-image: url("board-backgrounds/board-3-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-4 {
+  background-image: url("board-backgrounds/board-4-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-5 {
+  background-image: url("board-backgrounds/board-5-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-6 {
+  background-image: url("board-backgrounds/board-6-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-7 {
+  background-image: url("board-backgrounds/board-7-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-8 {
+  background-image: url("board-backgrounds/board-8-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-9 {
+  background-image: url("board-backgrounds/board-9-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-10 {
+  background-image: url("board-backgrounds/board-1-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.board-10 {
+  background-image: url("board-backgrounds/board-1-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boards__container {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.boards__sidebar {
+  background-color: #6C547B;
+  border-radius: 3px;
+  margin: 0 32px 32px 0;
+  padding: 0 20px 32px 20px;
+  max-height: 130px;
+  max-width: 180px;
+  width: 20%;
+  flex: 0 0 220px;
+}
+
+.boards__sidebar-content .title {
+  color: white;
+}
+.boards__sidebar-content a {
+  color: white;
+}
+.boards__sidebar-content .description {
+  color: lightblue;
+}
+
+.boards__group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.boards__board {
+background-color: hotpink;
+border-radius: 3px;
+box-sizing: border-box;
+font-weight: bold;
+height: 100px;
+margin: 0 8px 16px;
+max-width: 250px;
+padding: 4px 8px;
+position: relative;
+color: white;
+width: 25%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 750px) {
+  .boards__board {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .boards__container {
+    flex-direction: column;
+  }
+  .boards__board {
+    width: 100%;
+  }
+}
 
 /* Supplied CSS follows. */
 .header-nav__group{
   display: flex;
+}
+
+
+#alerts {
+  background-color: #CF513D;
 }
 
 .header-nav__button {
